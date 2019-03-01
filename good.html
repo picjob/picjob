@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img {
+				width: 100%;
+			}
+			/* 二维码 */
+			.scan {
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			.scan p {
+				font-size: 25px;
+			}
+			.scan .code {
+				width: 200px;
+				height: 200px;
+				background: url(code.jpg) no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="bg.jpg" alt="小猪求职官网">
+		<div class="scan">
+			<p>扫描二维码</p>
+			<div class="code"></div>
+		</div>
+	</body>
+</html>
