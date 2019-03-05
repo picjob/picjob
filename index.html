@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" src="">
+		<style>
+			body,html {
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				width: 100%;
+			}
+			/* 二维码 */
+			.scan {
+				position: fixed;
+				right: 20px;
+				bottom: 20px;
+			}
+			.scan .small {
+				/*font-size: 25px;*/
+				width: 50px;
+				height: 50px;
+				background-color: green;
+				cursor: pointer;
+				position: absolute;
+				right: 0px;
+				bottom: 200px;
+			}
+			.scan .small span {
+				display: block;
+				font-size: 40px;
+				color: #fff;
+				text-align: center;
+				line-height: 50px;
+			}
+			.scan .code {
+				width: 200px;
+				height: 200px;
+				background: url(code.jpg) no-repeat;
+				background-size: cover;
+				position: absolute;
+				right: -300px;
+				bottom: 0px;
+				transition: right 0.5s;
+			}
+			.scan .small:hover+.code {
+				right: 0px;
+			}
+			
+			/* 定义字体 */
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('fonts/iconfont.eot');
+			  src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+				  url('fonts/iconfont.woff2') format('woff2'),
+				  url('fonts/iconfont.woff') format('woff'),
+				  url('fonts/iconfont.ttf') format('truetype'),
+				  url('fonts/iconfont.svg#iconfont') format('svg');
+			}
+			
+			/* 定义使用iconfont的样式 */
+			.iconfont {
+			  font-family: "iconfont" !important;
+			  font-size: 16px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="bg.jpg" alt="小猪求职官网">
+		<div class="scan">
+			<div class="small"><span class="iconfont">&#xe745;</span></div>
+			<div class="code"></div>
+		</div>
+	</body>
+</html>
